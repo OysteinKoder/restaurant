@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger'n Fries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="grid">
+            <img src="pic/BURGUERFRIES.png" class="logo">
+            <ul class="headerGrid">
+                <li class="headerList"> <a href="">Food</a></li>
+                <li class="headerList"> <a href="">Drinks </a></li>
+                <li class="headerList"> <a href="map/index.html">Map</a></li>
+                <li class="headerList"> <a href="">Booking </a></li>
+                <div class="cart grid">
+                    <img src="pic/iconmonstr-shopping-cart-2.svg" alt="check shopping-cart, to checkout"
+                        class="checkoutCart" id="deCart">
+                    <div class="totalItems"> <span id="totalItems" class="totalItemsText"> 0 </span>
+                        <div class="dropdown">
+                            <div id="bigCheeseTotal"></div>
+                            <div id="devilTotal"> </div>
+                            <div id="doubbleTotal"> </div>
+                            <div id="breckfastTotal"> </div>
+                            <div id="haminatorTotal"> </div>
+                            <div id="finalPrice"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </ul>
+        </div>
+    </header>
+    <main>
+
+        <!-- main -->
+        <div class="menuSection">
+            <img src="pic/bbq.jpg" class="menuImg">
+            <div class="menuTextBox">
+                <div class="menuText">
+                    <h2> Big Cheese - 169,- </h2>
+                    <ul>
+                        <li>Lorem sp sda dorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eius.</li>
+                        <li>Voluptas delectus illum eius quibusdam eaque, facere excepturi ipsa numquam?</li>
+                        <li>A sed, exercitationem unde minima ullam mollitia itaque blanditiis quod?</li>
+                        <li>Ipsam repellendus laudantium quo voluptatum voluptatem aut. Eius, perspiciatis sunt.</li>
+
+                    </ul>
+                    <img src="/pic/iconmonstr-shopping-cart-15.svg" class="addToCart" id="bigCheeseCart"
+                        onclick="addPriceCheese()">
+                </div>
+            </div>
+        </div>
+        <!-- section -->
+        <div class="menuSection">
+            <img src="pic/devil.jpg" class="menuImg">
+            <div class="menuTextBox">
+                <div class="menuText">
+                    <h2> The Devil - 666,- </h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Blanditiis, dolore! Atque, quia explicabo?</li>
+                        <li>Reprehenderit esse quod fugiat maxime?</li>
+                        <li>Sequi impedit maiores quaerat id.</li>
+                        <li>Quia dicta rem cupiditate modi!</li>
+                        <li>Nobis aliquam labore architecto illo?</li>
+                    </ul>
+                    <img src="/pic/iconmonstr-shopping-cart-15.svg" class="addToCart" id="theDevilCart"
+                        onclick="addPriceDevil()">
+                </div>
+            </div>
+        </div>
+        <!-- section -->
+        <div class="menuSection">
+            <img src="pic/doubble.jpg" class="menuImg">
+            <div class="menuTextBox">
+                <div class="menuText">
+                    <h2> The Doubble - 200,- </h2>
+                    <ul>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Sapiente ipsa soluta quibusdam. Incidunt, esse doloribus.</li>
+                        <li>Odit autem dolor, unde sint architecto laboriosam.</li>
+                        <li>Numquam iusto excepturi accusantium, corrupti repellat dicta.</li>
+                        <li>Consequuntur labore a ab sed! Quisquam, eaque.</li>'
+                        <img src="/pic/iconmonstr-shopping-cart-15.svg" class="addToCart" id="theDoubbleCart"
+                            onclick="addPriceDoubble()">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- section -->
+        <div class="menuSection">
+            <img src="pic/eggs.jpg" class="menuImg">
+            <div class="menuTextBox">
+                <div class="menuText">
+                    <h2> Fat Man's Breckfast - 239,- </h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Id, aspernatur assumenda quasi perferendis hic minima praesentium.</li>
+                        <li>Harum, minus nam! Quasi dolorem quia omnis nihil?</li>
+                        <li>Sapiente nobis itaque dolore. Delectus excepturi veniam minus.</li>
+                        <li>Deserunt ullam qui vitae voluptatibus repudiandae et accusantium!</li>
+                        <li>Possimus, qui temporibus beatae animi nobis tempore nihil!</li>
+                        <img src="/pic/iconmonstr-shopping-cart-15.svg" class="addToCart" id="eggsCart"
+                            onclick="addPriceBreckfast()">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <!-- section -->
+        <div class="menuSection">
+            <img src="pic/haminator.jpg" class="menuImg">
+            <div class="menuTextBox">
+                <div class="menuText">
+                    <h2> Haminator - 196,- </h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Mollitia architecto vel repellendus non.</li>
+                        <li>Deserunt id eos officia quidem?</li>
+                        <li>Doloremque molestiae in delectus tempore!</li>
+                        <li>Ipsum dignissimos molestias in perspiciatis.</li>
+                        <li>Explicabo delectus animi deserunt corporis!</li>
+                        <img src="/pic/iconmonstr-shopping-cart-15.svg" class="addToCart" id="haminatorCart"
+                            onclick="addPriceHaminator()">
+                    </ul>
+                </div>
+            </div class="addToCart">
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footerItem normalText">About</div>
+            <div class="footerItem normalText">Press</div>
+            <div class="footerItem normalText">Work</div>
+            <div class="cookies"></div>
+        </footer>
+
+        <div class="totalPriceStyle" id="totalPrice">
+            <span>Total</span>
+            <br>
+            <span id="totalPriceTag"> </span>
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+
+</html>

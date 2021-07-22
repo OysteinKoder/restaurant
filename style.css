@@ -1,0 +1,233 @@
+body {
+    margin: 0 auto; 
+    background-image: url("/pic/restu1.jpg");
+    background-size:cover;
+    font-family: 'Viaoda Libre', cursive;
+    font-weight: 900;
+    min-height: 100%;
+    position: relative;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.headerGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-top:auto;
+    align-items: center;
+    width:100%;
+    height: 12vh;
+}
+
+li {
+    font-size: 1.3em;
+    margin-top: 0.4em;
+    list-style-type: none;
+}
+
+.grid {
+    display: flex;
+}
+
+.normalText {
+    font-size: 1.3em;
+}
+
+.headerList {
+    list-style-type: none;
+    font-size: 1.7rem;
+}
+
+a {
+    height: none;
+    color:black;
+    border-image: url(pic/borderMustache.png) 30 round;
+}
+
+:hover.headerList {
+    transform: scale(1.2);
+  border-bottom: solid black 0.2em;
+
+}
+
+header {
+    color: rgb(27, 24, 22);
+    background-color: rgba(238, 236, 236, 0.795); 
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.logo {
+    width: 9%;
+    position: left;
+}
+
+.menuSection {
+    color: rgba(238, 236, 236, 0.795);
+    backdrop-filter: blur(1px);
+    z-index: 1;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: rgba(238, 236, 236, 0.795); 
+    width: 100%;
+    bottom: 0;
+    height: 12vh;
+}
+
+:hover.footerItem {
+    transform: scale(1.2);
+    border-bottom: solid black 3px;
+}
+
+.menuSection {
+    background-color: rgba(128, 128, 128, 0.568);
+    margin: 0 auto;
+    margin-top: 10vh;
+    height: 80vh;
+    text-align: center;
+    justify-content:space-between;
+    align-items: center;
+    display: flex;
+    margin: 10vh;
+    border-radius: 12.5px;
+}
+
+.menuImg {
+    height: 70%;
+    margin-left: 5vh;
+    border-radius: 12.5px;
+}
+
+.menuTextBox {
+    height: 70%;
+    width: 100%;
+    background-color: rgba(238, 236, 236, 0.795);
+    border-radius: 12.5px;
+    color: blacK;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.menuText {
+    margin-top: 10vh;
+    
+}
+
+h2 {
+    border-bottom: black dotted 0.1em;
+    width:fit-content;
+    margin: auto;
+}
+
+.addToCart {
+    transform: scale(1.5);
+    margin-top: 2rem;
+}
+
+:hover.addToCart {
+    transform: scale(3);
+}
+
+
+.totalPriceStyle {
+    background-color: rgba(238, 236, 236, 0.918);
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    left: 45%;
+    color: rgb(0, 0, 0);
+    bottom: 10%;
+    opacity: 0;
+    font-size: 1.5rem;
+    backdrop-filter: blur(1px);
+    z-index: 2;
+}
+
+@keyframes removePrice {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+
+.priceRemove {
+    animation-name: removePrice;
+    animation-duration: 5s;
+}
+
+.active {
+    background: red;
+  }
+  
+  section {
+    background: #ccc;
+    transition: all 1s ease;
+    padding: 2% 0;
+    overflow-x: hidden;
+    max-width: 1000px;
+    margin: 2% auto;
+  }
+  
+  h1{
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .checkoutCart {
+      height: 5vh;
+  }
+
+  :hover.checkoutCart {
+      transform: scale(1.2);
+  }
+
+  .totalItems {
+      background-color: red;
+      height: 2vh;
+      width: 2vh;
+      border-radius: 25px;
+      color: white;
+      align-items: center;
+  }
+
+  .cart {
+      width: fit-content;
+      text-align: center;
+      /* border: solid red ; */
+      height: fit-content;
+  }
+
+.dropdown {
+    width: fit-content;
+    color: black;
+    background-color: rgba(238, 236, 236, 0.973);
+    border-radius: 12.5px;
+    z-index: 2;
+    position: relative;
+    transition: 1s;
+    border: black .2em solid;
+}
+
+:hover.dropdown {
+    width: 30vh;
+    height: 60vh;
+}
+
+.dropdown div{
+    width: 15vh;
+    height: 2vh;
+    border-bottom: black dotted 0.1em;
+    display: none;
+}
